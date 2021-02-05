@@ -14,7 +14,7 @@ void main(void)
         int i;
 
         for(i = 0; i < 150000; i++); //LED on delay
-            P1->OUT |= BIT0; //P1.0 high, LED off
+            P1->OUT |= BIT0; //P1.0 high, LED on
 
         for(i = 0; i < 150000; i++);//LED off delay
             P1->OUT &= ~BIT0; //P1.0 low, LED off
